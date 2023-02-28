@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun evaluate(guessCount: Int, guess: String, result: String, guessesRemaining: Int, textViewGuessAppend: TextView, textViewCheckAppend: TextView, finalWord: TextView) {
-        textViewGuessAppend.append("Guess #" + guessCount + guess +"\n")
-        textViewCheckAppend.append("Guess #" + guessCount + "Check " + result + "\n")
+        textViewGuessAppend.append("Guess #" + guessCount + " " + guess +"\n")
+        textViewCheckAppend.append("Guess #" + guessCount + " Check " + result + "\n")
 
         if (result == "OOOO") {
             Toast.makeText(applicationContext, "You've guessed correctly", Toast.LENGTH_SHORT).show()
